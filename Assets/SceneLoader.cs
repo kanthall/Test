@@ -29,4 +29,12 @@ public class SceneLoader : MonoBehaviour
     {
         Cursor.visible = true;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+    }
 }
