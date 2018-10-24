@@ -487,6 +487,18 @@ Prefab:
     - {fileID: 81859171366278774, guid: 588719f8bae75d143bfb50948a31d106, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 588719f8bae75d143bfb50948a31d106, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &903430507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1803902782233880, guid: 588719f8bae75d143bfb50948a31d106,
+    type: 2}
+  m_PrefabInternal: {fileID: 903430506}
+--- !u!81 &903430508
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903430507}
+  m_Enabled: 1
 --- !u!1001 &941659579
 Prefab:
   m_ObjectHideFlags: 0
@@ -583,6 +595,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114216291497671554, guid: 42db2495445e3194ba43badd3c4586a9,
+        type: 2}
+      propertyPath: ballSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4756447127007116, guid: 42db2495445e3194ba43badd3c4586a9, type: 2}
       propertyPath: m_LocalPosition.x
       value: 7.73
@@ -620,6 +637,21 @@ Prefab:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 2092355608}
+    - target: {fileID: 82426232753823776, guid: 42db2495445e3194ba43badd3c4586a9,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114216291497671554, guid: 42db2495445e3194ba43badd3c4586a9,
+        type: 2}
+      propertyPath: ballSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 871ab5292ea7fb042bd2805ca283006e, type: 3}
+    - target: {fileID: 114216291497671554, guid: 42db2495445e3194ba43badd3c4586a9,
+        type: 2}
+      propertyPath: ballSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e990aa6299c5f3740b94b98418fcb4d9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42db2495445e3194ba43badd3c4586a9, type: 2}
   m_IsPrefabAsset: 0
