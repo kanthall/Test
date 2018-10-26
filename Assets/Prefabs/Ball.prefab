@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50818849339148740}
   - component: {fileID: 58147806765105510}
   - component: {fileID: 114216291497671554}
-  - component: {fileID: 82426232753823776}
+  - component: {fileID: 82147991900700532}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -79,7 +79,7 @@ CircleCollider2D:
   m_Offset: {x: 0.005, y: 0.01}
   serializedVersion: 2
   m_Radius: 0.21
---- !u!82 &82426232753823776
+--- !u!82 &82147991900700532
 AudioSource:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,6 +188,9 @@ MonoBehaviour:
   paddle1: {fileID: 0}
   xPush: 2
   yPush: 15
+  ballSounds:
+  - {fileID: 8300000, guid: 871ab5292ea7fb042bd2805ca283006e, type: 3}
+  - {fileID: 8300000, guid: e990aa6299c5f3740b94b98418fcb4d9, type: 3}
 --- !u!212 &212066868774189888
 SpriteRenderer:
   m_ObjectHideFlags: 1
