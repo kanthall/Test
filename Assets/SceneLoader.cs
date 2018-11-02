@@ -17,12 +17,14 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadStart()
     {
+        FindObjectOfType<GameSession>().ReloadPoints();
         SceneManager.LoadScene(0);
     }
     
     public void Next()
     {
-        SceneManager.LoadScene(2);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
     private void Start()
@@ -34,7 +36,8 @@ public class SceneLoader : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(1);
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentScene);
         }
     }
 }
