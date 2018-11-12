@@ -8,6 +8,7 @@ public class GameSession : MonoBehaviour {
     int pointsPerBlockDestroy = 5;
     [SerializeField] int currentScore = 0;
     [SerializeField] Text scoreText;
+    [SerializeField] bool isAutoPlayEnabled;
 
     [Range(0.1f, 10f)] [SerializeField] float gameSpeed = 1f;
 
@@ -45,5 +46,10 @@ public class GameSession : MonoBehaviour {
     public void ReloadPoints()
     {
         Destroy(gameObject);
+    }
+
+    public bool IsAutoPlayEnabled()
+    {
+        return isActiveAndEnabled;
     }
 }

@@ -104,7 +104,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentScore: 0
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 114786969191454160}
+  isAutoPlayEnabled: 0
   gameSpeed: 1
 --- !u!114 &114786969191454160
 MonoBehaviour:

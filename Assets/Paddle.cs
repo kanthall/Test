@@ -8,10 +8,14 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float minX = 1f;
     [SerializeField] float maxX = 15;
 
-    // Use this for initialization
+    Ball theBall;
+    GameSession theGameSession;
+
     void Start () {
     //Set Cursor to not be visible
          Cursor.visible = false;
+        theGameSession = FindObjectOfType<GameSession>();
+        theBall = FindObjectOfType<Ball>();
     }
 	
 	// Update is called once per frame
@@ -23,4 +27,18 @@ public class Paddle : MonoBehaviour {
         paddlePosition.x = Mathf.Clamp(mousePositionInUnits, minX, maxX);
         transform.position = paddlePosition;
 	}
+
+
+    // autoplay for the paddle - math clamp should have this function called to work
+    private float GetXPos()
+    {
+        if (theGameSession.IsAutoPlayEnabled())
+        {
+            return theBall.transform.position.x;
+        }
+        else
+        {
+            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
+        }
+    }
 }
